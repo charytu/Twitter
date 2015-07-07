@@ -24,8 +24,8 @@
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"MM/dd/yy"];
         self.createAt = [dateFormat stringFromDate:createdAt];
-        
-       
+        self.retweetCount = [dictionary[@"retweet_count"] integerValue];
+        NSLog(@"retweet Count: %ld", self.retweetCount);
     }
     
     return self;

@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSString *createAt;
 
+@property (nonatomic, assign) NSInteger retweetCount;
 
 @property (nonatomic, strong) User   *user;
 

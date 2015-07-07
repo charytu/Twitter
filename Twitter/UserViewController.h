@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Tweet.h"
 
 @interface UserViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 @property (weak, nonatomic) IBOutlet UILabel *postingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *createAtLabel;
-@property(nonatomic, strong) NSArray *tweets;
+//@property(nonatomic, strong) NSArray *tweets;
+@property (weak, nonatomic) IBOutlet UILabel *reteetsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *favoritesLabel;
 
+- (id)initWithUser:(Tweet *)tweets;
 @end

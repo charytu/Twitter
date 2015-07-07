@@ -119,14 +119,15 @@
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UserViewController *svc = [[UserViewController alloc]init];
-    [self.navigationController pushViewController:svc animated:YES];
+    UserViewController *svc = [[UserViewController alloc] initWithUser:self.tweets[indexPath.row]];
+    [self.navigationController pushViewController:svc   animated:YES];
 }
 
 
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     TweetTableViewCell *cell = sender;
@@ -138,6 +139,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-
+*/
 
 @end
